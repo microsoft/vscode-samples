@@ -3,9 +3,9 @@ Press Ctrl+Shift+V (Windows, Linux) or Cmd+Shift+V (OSX) to preview this documen
 -->
 
 # Getting Started with Node, Express and Visual Studio Code
-This is an [express-generator](http://expressjs.com/starter/generator.html) generated sample customized for development using [Visual Studio Code](http://code.visualstudio.com).  
+This is a sample customized for development using [Visual Studio Code](http://code.visualstudio.com).  
 
-This example illustrates:
+This sample illustrates:
 - **Great IntelliSense**: [TypeScript definition files](https://github.com/borisyankov/DefinitelyTyped) provide IntelliSense for Node, Express, Mocha, and Gulp. Use [tsd](http://definitelytyped.org/tsd/) to install additional typings.
 
 - **Iterative Development**: Use [BrowserSync](http://www.browsersync.io/) and [NodeMon](http://nodemon.io/) to automatically recycle your client and server while developing in Visual Studio Code. Run `gulp browser-sync` from the Terminal.
