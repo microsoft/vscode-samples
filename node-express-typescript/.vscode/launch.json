@@ -1,0 +1,53 @@
+{
+	"version": "0.1.0",
+	// List of configurations. Add new configurations or edit existing ones.  
+	// ONLY "node" and "mono" are supported, change "type" to switch.
+	"configurations": [
+		{
+			// Name of configuration; appears in the launch configuration drop down menu.
+			"name": "Launch ./src/www.js",
+			// Type of configuration. Possible values: "node", "mono".
+			"type": "node",
+			// Workspace relative or absolute path to the program.
+			"program": "./src/www.js",
+			// Automatically stop program after launch.
+			"stopOnEntry": false,
+			// Command line arguments passed to the program.
+			"args": [],
+			// Workspace relative or absolute path to the working directory of the program being debugged. Default is the current workspace.
+			"cwd": ".",
+			// Workspace relative or absolute path to the runtime executable to be used. Default is the runtime executable on the PATH.
+			"runtimeExecutable": null,
+			// Optional arguments passed to the runtime executable.
+			"runtimeArgs": [],
+			// Environment variables passed to the program.
+			"env": { },
+			// Use JavaScript source maps (if they exist).
+			"sourceMaps": true,
+			// If JavaScript source maps are enabled, the generated code is expected in this directory.
+			"outDir": "./src"
+		}, 
+		{
+			"name": "Debug Tests",
+			"type": "node",
+			// Notice, we bypass the launcher and start the test runner directly
+			"program": "node_modules/mocha/bin/_mocha",
+			"stopOnEntry": false,
+			// run the tests in the tests folder
+			"args": ["tests"],
+			"cwd": ".",
+			"runtimeExecutable": null,
+			"env": { },
+            "sourceMaps": true,
+            "outDir": "./tests"
+		}, 
+		{
+			"name": "Attach to running instance",
+			"type": "node",
+			// VS Code only supports 'localhost' at this time
+			"address": "localhost",
+			// Port to attach to, must match port in gulpfile.js
+			"port": 5858
+		}
+	]
+}
