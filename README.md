@@ -1,12 +1,14 @@
 
 # vscode-samples
 
-This repository contains sample applications customized for Visual Studio Code. Each sample is a self contained workspace with configuration files specific to that folder. To take full advantage of VS Code, open an individual sample rather than opening the root (where this file is located).
+This repository contains sample applications customized for Visual Studio Code. Each sample is a self contained workspace with configuration files specific to that folder. 
 
-For example, to open a new instance of VS Code and load the node-express-javascript sample, do the following from the terminal:
+To get started, cd into the sample directory, run `npm install` to install any necessary dependencies, and then start code:
 
 ``` bash
-code node-express-javascript
+cd node-express-javascript
+npm install
+code .
 ```
 
 ## License
