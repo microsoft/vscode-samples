@@ -1,7 +1,9 @@
 THIRD-PARTY SOFTWARE NOTICES AND INFORMATION
 For Microsoft vscode-samples
  
-This project incorporates material from the projects listed below.  The original copyright notice and the license under which Microsoft received such material are set out below. Microsoft reserves all other rights not expressly granted, whether by implication, estoppel or otherwise.
+This project incorporates material from the projects listed below.  The original copyright notice 
+and the license under which Microsoft received such material are set out below. Microsoft reserves 
+all other rights not expressly granted, whether by implication, estoppel or otherwise.
  
 1.       DefinitelyTyped version 0.0.1 (https://github.com/borisyankov/DefinitelyTyped)
  
