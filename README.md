@@ -11,15 +11,14 @@ npm install -g gulp
 
 Next, cd into the sample directory, run `npm install` to install any necessary dependencies, and then start code:
 
-
-JavaScript sample:
+**JavaScript**
 ``` bash
 cd node-express-javascript
 npm install
 code .
 ```
 
-TypeScript sample:
+**TypeScript**
 ``` bash
 cd node-express-typescript
 npm install
