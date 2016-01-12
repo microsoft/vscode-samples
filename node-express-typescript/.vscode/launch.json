@@ -4,6 +4,7 @@
 	// ONLY "node" and "mono" are supported, change "type" to switch.
 	"configurations": [
 		{
+            "request": "launch",
 			// Name of configuration; appears in the launch configuration drop down menu.
 			"name": "Launch ./src/www.js",
 			// Type of configuration. Possible values: "node", "mono".
@@ -28,6 +29,7 @@
 			"outDir": "./src"
 		}, 
 		{
+            "request": "launch",
 			"name": "Debug Tests",
 			"type": "node",
 			// Notice, we bypass the launcher and start the test runner directly
@@ -42,10 +44,9 @@
             "outDir": "./tests"
 		}, 
 		{
+            "request": "attach",
 			"name": "Attach to running instance",
 			"type": "node",
-			// VS Code only supports 'localhost' at this time
-			"address": "localhost",
 			// Port to attach to, must match port in gulpfile.js
 			"port": 5858
 		}
