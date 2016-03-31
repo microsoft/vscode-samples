@@ -1,3 +1,37 @@
+var bradFunction = function () {
+    var brad = 1;
+  var rach = 1;
+  var greg = 1;
+  var dan = 1;
+  brad =+ 13;
+  rach =+ 44;
+  greg =+ 300;
+  dan =+ 51;
+ 
+  brad++;
+  rach++;
+  greg++;
+  dan++;
+ 
+  brad++;
+  rach++;
+  greg++;
+  dan++;
+ 
+  brad++;
+  rach++;
+  greg++;
+  dan++;
+ 
+  brad++;
+  rach++;
+  greg++;
+  dan++;
+ 
+};
+
+bradFunction();
+
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
@@ -28,6 +62,8 @@ app.use('/users', users);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
+  
+  
   err.status = 404;
   next(err);
 });
