@@ -26,7 +26,9 @@
 			// Use JavaScript source maps (if they exist).
 			"sourceMaps": false,
 			// If JavaScript source maps are enabled, the generated code is expected in this directory.
-			"outDir": null
+			"outDir": null,
+			"externalConsole": false,
+			"smartStep": true
 		}, 
 		{
             "request": "launch",
@@ -47,6 +49,7 @@
 			"type": "node",
 			// Port to attach to, must match port in gulpfile.js
 			"port": 5858
+			// ,"processId": "${command.PickProcess}"
 		}
 	]
 }

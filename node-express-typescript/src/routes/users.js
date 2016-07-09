@@ -1,3 +1,4 @@
+"use strict";
 var express_1 = require('express');
 var users = express_1.Router();
 /* GET users listing. */

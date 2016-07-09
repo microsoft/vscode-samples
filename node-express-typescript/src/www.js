@@ -1,3 +1,4 @@
+"use strict";
 var app_1 = require('./app');
 var debugModule = require('debug');
 var http = require('http');
