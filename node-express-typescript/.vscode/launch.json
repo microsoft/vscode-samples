@@ -1,6 +1,6 @@
 {
 	"version": "0.1.0",
-	// List of configurations. Add new configurations or edit existing ones.  
+	// List of configurations. Add new configurations or edit existing ones.
 	// ONLY "node" and "mono" are supported, change "type" to switch.
 	"configurations": [
 		{
@@ -26,10 +26,9 @@
 			// Use JavaScript source maps (if they exist).
 			"sourceMaps": true,
 			// If JavaScript source maps are enabled, the generated code is expected in this directory.
-			"outDir": "${workspaceRoot}/src",
-			"externalConsole": false,
+			"outFiles": ["${workspaceRoot}/src/**/*.js"],
 			"smartStep": true
-		}, 
+		},
 		{
             "request": "launch",
 			"name": "Debug Tests",
@@ -43,8 +42,8 @@
 			"runtimeExecutable": null,
 			"env": { },
             "sourceMaps": true,
-            "outDir": "${workspaceRoot}/tests"
-		}, 
+            "outFiles": ["${workspaceRoot}/tests/**/*.js"]
+		},
 		{
             "request": "attach",
 			"name": "Attach to running instance",
