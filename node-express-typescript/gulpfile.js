@@ -59,7 +59,7 @@ gulp.task('nodemon', function (cb) {
 });
 
 // TypeScript build for /src folder, pipes in .d.ts files from typings folder 
-var tsConfigSrc = tsb.create('src/tsconfig.json');
+var tsConfigSrc = tsb.create(require('./src/tsconfig.json'));
 gulp.task('build', function () {
     return gulp.src(['typings/**/*.ts', 'src/**/*.ts'])
         .pipe(tsConfigSrc()) 
@@ -68,7 +68,7 @@ gulp.task('build', function () {
 
 // TypeScript build for /tests folder, pipes in .d.ts files from typings folder
 // as well as the src/tsd.d.ts which is referenced by tests/tsd.d.ts 
-var tsConfigTests = tsb.create('tests/tsconfig.json');
+var tsConfigTests = tsb.create(require('./tests/tsconfig.json'));
 gulp.task('buildTests', function () {
     // pipe in all necessary files
     return gulp.src(['typings/**/*.ts', 'tests/**/*.ts', 'src/tsd.d.ts'])
