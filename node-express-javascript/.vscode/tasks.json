@@ -11,7 +11,6 @@
         {
             "taskName": "default",
             "args": [],
-            "isBuildCommand": true,
             "isBackground": true,
             "problemMatcher": [
                 "$lessCompile"
@@ -24,6 +23,7 @@
         },
         {
             "taskName": "less",
+            "isBuildCommand": true,
             "args": [],
             "problemMatcher": [
                 "$lessCompile"
