@@ -1,6 +1,6 @@
 import app from './app';
-import debugModule = require('debug');
-import http = require('http');
+import * as debugModule from 'debug';
+import * as http from 'http';
 
 const debug = debugModule('node-express-typescript:server');
 
@@ -69,5 +69,5 @@ function onListening() {
     ? 'pipe ' + addr
     : 'port ' + addr.port;
 
-  debug('Listening on ' + bind);
+  console.log('Listening on ' + bind);
 }
